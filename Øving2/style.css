@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+h1 {
+  margin-bottom: 25px;
+  text-decoration: bold;
+}
+
+.container {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  background-color: grey;
+  text-align: center;
+  padding-top: 120px;
+  border-radius: 50px;
+  color: white;
+  overflow: scroll;
+}
+
+input[type="text"] {
+  text-indent: 5px;
+  width: 70%;
+  height: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+input[type="button"] {
+  width: 100px;
+}

@@ -1,0 +1,232 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9e9e9e;
+  overflow-x: hidden;
+}
+
+.logoHeader {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRjD0sMV6C5Q7gTR9qwqlPeJZDLmpbunjt1-1FnFOP_4v91gQa");
+  width: 100%;
+  height: 140px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.menuHeader {
+  width: 100%;
+  height: 50px;
+  background: darkslategray;
+  -webkit-box-shadow: -1px 5px 5px -3px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: -1px 5px 5px -3px rgba(0, 0, 0, 0.66);
+  box-shadow: -1px 5px 5px -3px rgba(0, 0, 0, 0.66);
+}
+
+.navUl {
+  list-style: none;
+  display: table;
+  margin: 0 auto;
+  padding-top: 8px;
+}
+
+.navLi {
+  float: left;
+  margin: 0 25px;
+  color: antiquewhite;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.navLi:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contentContainer {
+  margin: 50px;
+}
+
+.contentGrid {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  min-height: 800px;
+}
+
+@media only screen and (max-width: 911px) {
+  .contentGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    overflow-x: hidden;
+  }
+
+  .pancakeMenu {
+    visibility: visible !important;
+    position: absolute;
+    right: 50;
+    top: 150px;
+    cursor: pointer;
+    z-index: 8;
+  }
+
+  .navUl {
+    visibility: hidden;
+  }
+
+  .mobileNavBar {
+    top: 190px;
+    bottom: 0;
+    width: 100%;
+    background: #3e3e3e;
+    position: absolute;
+    visibility: hidden;
+
+    z-index: 1;
+  }
+
+  .mobileNavBar-active {
+    height: 100%;
+    width: 100%;
+    background: #3e3e3e;
+    position: absolute;
+
+    z-index: 1;
+    visibility: visible;
+  }
+
+  .article {
+    width: 350px !important;
+    height: 600px;
+    background-color: white;
+    border-radius: 5px;
+    display: table;
+    text-align: center;
+    -webkit-box-shadow: -1px 5px 5px -3px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: -1px 5px 5px -3px rgba(0, 0, 0, 0.66);
+    box-shadow: -1px 5px 5px -3px rgba(0, 0, 0, 0.66);
+  }
+
+  .articleImg {
+    margin: 10px auto;
+
+    width: 330px !important;
+    height: 380px;
+    overflow: hidden;
+    border: 1px solid black;
+  }
+}
+
+@media only screen and (max-width: 1700px) and (min-width: 1351px) {
+  .contentGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+  }
+}
+
+@media only screen and (max-width: 1350px) and (min-width: 912px) {
+  .contentGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+  }
+}
+
+.article {
+  width: 400px;
+  height: 600px;
+  background-color: white;
+
+  border-radius: 5px;
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-box-shadow: -1px 5px 5px -3px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: -1px 5px 5px -3px rgba(0, 0, 0, 0.66);
+  box-shadow: -1px 5px 5px -3px rgba(0, 0, 0, 0.66);
+}
+
+.articleImg {
+  margin: 10px auto;
+
+  width: 380;
+  height: 380px;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.headline {
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.footerBar {
+  width: 100%;
+  height: 250px;
+  background-color: #3e3e3e;
+  color: beige;
+  text-align: center;
+  padding: 50px;
+}
+
+.submitBtn {
+  background-color: black;
+  display: block;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background-color: #2e2e2e;
+  text-decoration: none;
+}
+
+.breadtext {
+  /*something */
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.pancakeMenu {
+  visibility: hidden;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin-top: 5px;
+}
+
+.rollingNews {
+  width: 100%;
+  height: 30px;
+  background-color: orange;
+}
+
+#rollText {
+  font-family: "Oswald", sans-serif;
+  font-weight: 100;
+}
+
+.postDate {
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
