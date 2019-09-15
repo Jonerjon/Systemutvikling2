@@ -1,7 +1,7 @@
 # Systemutvikling2
 Øvinger for systemutvikling 2 
 
-* Øving 1 - [HTML/CSS](/Øving1)
+* Øving 1 - [HTML/CSS Grids](/Øving1)
 
 * Øving 2 - [fetch](/Øving2)
 
