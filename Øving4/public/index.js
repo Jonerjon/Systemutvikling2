@@ -1,4 +1,9 @@
 let myButton = document.querySelector("#myButton");
+let getPersonBtn = document.querySelector("#getPerson");
+
+getPersonBtn.addEventListener("click", () => {
+  getPerson();
+});
 
 myButton.addEventListener("click", e => {
   console.log("Fikk klikk-event");
